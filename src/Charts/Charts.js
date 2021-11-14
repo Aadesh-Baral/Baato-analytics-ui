@@ -1,12 +1,13 @@
 import React from 'react';
 import BarChart from './BarChart/BarChart';
 import HeatMap from './Heatmap/Heatmap';
-
+import Map from './Heatmap/Map'
 const charts = ()=> {
     return (
         <div className='columns'>
             <BarChart />
-            <HeatMap />
+            {/* <HeatMap /> */}
+            <Map />
         </div>
 
     )

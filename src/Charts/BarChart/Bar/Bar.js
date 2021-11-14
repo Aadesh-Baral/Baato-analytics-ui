@@ -1,11 +1,11 @@
 import React from "react";
 
 
-const bar = () => {
+const bar = (props) => {
     return (
         <div className='Bar'>
-            <span className='Name'>Kathmandu</span>
-            <span className='Count'>20621</span>
+            <span className='Name'>{props.district}</span>
+            <span className='Count'>{props.requestCount}</span>
         </div>
     )
 }
