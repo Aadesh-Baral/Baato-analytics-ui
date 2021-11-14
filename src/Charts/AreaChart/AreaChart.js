@@ -16,8 +16,9 @@ class AreaChart extends React.Component {
 			},
             axisX:{
                 labelFontFamily: "Poppins",
-                labelFontColor: "white",
-                labelFontSize:"8"
+                labelFontSize:"8",
+				interval: 1,
+				labelFontColor: '#fff'
             },
 			axisY: {
 				// title: "Number of iPhones ( in Million )",
@@ -27,10 +28,6 @@ class AreaChart extends React.Component {
                 labelFontSize:8,
 			},
 			dataPointWidth: 15,
-			axisX: {
-				interval: 1,
-				labelFontColor: '#fff'
-			},
 			data: [
 			{
 				type: "splineArea",
