@@ -21,7 +21,7 @@ const HeatMap = (props)=> {
     const mapRef = useRef(null)
     useEffect(
         () => {
-            mapboxgl.accessToken = '';
+            mapboxgl.accessToken = MapboxAccessToken;
             mapRef.current =  new mapboxgl.Map({
                 container: 'map', // container id
                 // style: 'https://api.baato.io/api/v1/styles/breeze?key=bpk.MLkcow8vhdKGJkMivqaw1OiCMAKspIfgbyW-C8-AsLbB',
