@@ -1,13 +1,17 @@
 import React from 'react';
 import BarChart from './BarChart/BarChart';
 // import HeatMap from './Heatmap/Heatmap';
-import Map from './Heatmap/Map'
+// import Map from './Heatmap/Map';
+import HexMap from './Heatmap/ClusterMap/ClusterMap';
+
+
 const charts = ()=> {
     return (
         <div className='columns'>
             <BarChart />
             {/* <HeatMap /> */}
-            <Map />
+            {/* <Map /> */}
+            < HexMap />
         </div>
 
     )

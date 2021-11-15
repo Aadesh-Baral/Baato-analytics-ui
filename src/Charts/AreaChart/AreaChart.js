@@ -11,8 +11,19 @@ class AreaChart extends React.Component {
             backgroundColor: 'rgba(10, 25, 58, 0.603)',
             height:150,
 			width: 850,
+			toolTip: {
+				fontColor: "black",
+				fontFamily: "Poppins",
+				fontSize: 10,
+				borderColor:"black",
+			 },
 			title: {
-				// text: "Number of iPhones Sold"
+				text: "Request count by weekdays",
+				fontSize: 10,
+				fontFamily: "Poppins",
+				fontColor: "#fff",
+				horizontalAlign:"left",
+				margin: 30,
 			},
             axisX:{
                 labelFontFamily: "Poppins",
@@ -35,13 +46,13 @@ class AreaChart extends React.Component {
 				// xValueFormatString: "YYYY",
 				// yValueFormatString: "#,##0.## Million",
 				dataPoints: [
-					{ label:'Sunday', y: 4.6},
-					{ label:'Monday', y: 9.3},
-					{ label:'Tuesday', y: 5.4},
-					{ label:'Wednesday', y: 6.3},
-					{ label:'Thursday', y: 4.5},
-					{ label:'Friday', y: 7.8},
-					{ label:'Saturday', y: 3.2},
+					{ label:'Sunday', y: 4},
+					{ label:'Monday', y: 9},
+					{ label:'Tuesday', y: 5},
+					{ label:'Wednesday', y: 6},
+					{ label:'Thursday', y: 4},
+					{ label:'Friday', y: 7},
+					{ label:'Saturday', y: 3},
 				]
 			}
 			]

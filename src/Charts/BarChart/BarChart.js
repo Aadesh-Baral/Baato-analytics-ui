@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import authHeader from '../../API/API';
 import Bar from './Bar/Bar'
 // import {CanvasJSChart}  from '../../canvasjs.react'
 
@@ -9,7 +10,8 @@ const BarChart = () => {
             const url = "https://api-staging.baato.io/api/v1/admin/analytics/district?userId=11&limit=5";
             const fetchData = async () => {
                 try {
-                    const response = await fetch(url, {headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcm9neWFrb2lyYWxhK3Rlc3RAZ21haWwuY29tIiwic2NvcGVzIjoiUk9MRV9BRE1JTiIsImlhdCI6MTYzNjg3NzAyNCwiZXhwIjoxNjM2ODk1MDI0fQ.jZ3Z0a45D8WPnxbHxwprksR2M_GI-ko3-G8hETRdbAI'}});
+                    const token = await authHeader();
+                    const response = await fetch(url, {headers: token});
                     const json = await response.json();
                     // console.log(json['data']['content']);
                     setDistricts(json['data']['content'])
