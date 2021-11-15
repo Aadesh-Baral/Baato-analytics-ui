@@ -1,9 +1,8 @@
 import React, {useEffect, useRef} from "react";
-// import L from 'leaflet';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-// import heatmap_data from "./Map";
 import AreaChart from "../AreaChart/AreaChart";
+import {MapboxAccessToken} from '../../constants';
 
 // const heatmap_data = heatmap_data;
 const HeatMap = (props)=> {
@@ -22,7 +21,7 @@ const HeatMap = (props)=> {
     const mapRef = useRef(null)
     useEffect(
         () => {
-            mapboxgl.accessToken = 'pk.eyJ1IjoiYWFkZXNoLWJhcmFsIiwiYSI6ImNrcWozN3d1eDBibnkydXBkdmJtY21qM3AifQ.7Si23kBM7Fjb7tdSenXD0w';
+            mapboxgl.accessToken = '';
             mapRef.current =  new mapboxgl.Map({
                 container: 'map', // container id
                 // style: 'https://api.baato.io/api/v1/styles/breeze?key=bpk.MLkcow8vhdKGJkMivqaw1OiCMAKspIfgbyW-C8-AsLbB',
