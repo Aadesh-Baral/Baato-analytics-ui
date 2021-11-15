@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import 'mapbox-gl/dist/mapbox-gl.css';
+// import 'mapbox-gl/dist/mapbox-gl.css';
 import mapboxgl from 'mapbox-gl';
 import {geoJsonData} from './geoJsonData'
 import AreaChart from '../../AreaChart/AreaChart';
@@ -144,7 +144,7 @@ const HexMap = ()=> {
     
     return (
     <div className='column center'>
-        <div className='chart-title'>(3) Cluster Map of reverse request sources</div>
+        <div className='chart-title'><i className='bx bx-line-chart'></i>(3) Cluster Map of reverse request sources</div>
         <div id='map'></div>
         <AreaChart />
     </div>
