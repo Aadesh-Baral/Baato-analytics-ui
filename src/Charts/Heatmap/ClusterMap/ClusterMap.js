@@ -144,7 +144,7 @@ const HexMap = ()=> {
     
     return (
     <div className='column center'>
-        <div className='chart-title'>Cluster Map of reverse request sources</div>
+        <div className='chart-title'>(3) Cluster Map of reverse request sources</div>
         <div id='map'></div>
         <AreaChart />
     </div>

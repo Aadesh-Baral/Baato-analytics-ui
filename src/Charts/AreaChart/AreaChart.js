@@ -8,7 +8,7 @@ class AreaChart extends React.Component {
 			theme: "light1",
 			animationEnabled: false,
 			exportEnabled: false,
-            backgroundColor: 'rgba(10, 25, 58, 0.603)',
+            backgroundColor: 'rgba(10, 25, 58, 0.703)',
             height:150,
 			width: 850,
 			toolTip: {
@@ -18,12 +18,12 @@ class AreaChart extends React.Component {
 				borderColor:"black",
 			 },
 			title: {
-				text: "Request count by weekdays",
+				text: "(4) Request count by weekdays",
 				fontSize: 10,
 				fontFamily: "Poppins",
 				fontColor: "#fff",
 				horizontalAlign:"left",
-				margin: 30,
+				margin: 20,
 			},
             axisX:{
                 labelFontFamily: "Poppins",
